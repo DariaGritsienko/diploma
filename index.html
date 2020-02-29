@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дипломный проект">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Грициенко Дарья">
+  <title>Diploma</title>
+  <link rel="stylesheet" href="styles/index.1834f87019844b0e387a.css">
+</head>
+
+<body>
+  <div class="root">
+
+    <header class="header header_bg header_alignItems">
+      <div class="header__line header__line_white">
+        <div class="header__container header__container_shadow_white">
+          <h2 class="header__name header__name_color_white">NewsAnalyzer</h2>
+          <nav class="header__nav">
+            <a href="#" class="header__link header__link_active header__link_color_white">Главная</a>
+            <a href="./about.html" class="header__link header__link_color_gray">О проекте</a>
+          </nav>
+        </div>
+      </div>
+      <div class="header__browser header__browser_width">
+        <h1 class="header__title header__title_color_white">Что в мире<br> творится?</h1>
+        <p class="header__text header__text_color_white">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+        <div class="header__finder"><input type="text" id="news" placeholder="Введите тему новости"><button class="button header__button">Искать</button></div>
+      </div>
+    </header>
+
+
+      <div class="news" style="display: none">
+        <i class="news__circle-preloader"></i>
+        <p class="news__text-preloader">Идет поиск новостей...</p>
+      </div>
+      <div class='news' style="display: none">
+        <img src="./images/not-found.png" alt="sad smile not found information" class="news__image-notFound">
+        <h2 class="news__title-notFound">Ничего не найдено</h2>
+        <p class="news__text-notFound">К сожалению по вашему запросу<br>
+          ничего не найдено.</p>
+      </div>
+      <div class="news">
+        <div class="news__result-content">
+          <h2 class="news__result-title">Результаты поиска</h2>
+          <a href="./analytics.html" class="news__result-link">Посмотреть аналитику <img src="./images/arrow.png" alt="arrow" class="news__result-arrow"></a>
+        </div>
+        <div class="news-list">
+          <div class="news-card">
+            <img src="./images/image_08.png" class="news-card__image">
+            <p class="news-card__date">2 августа, 2019</p>
+            <h3 class="news-card__title">Национальное достояние – парки</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+            <h4 class="news-card__source">Лента.ру</h4>
+          </div>
+          <div class="news-card">
+            <img src="./images/image_04.png" class="news-card__image">
+            <p class="news-card__date">2 августа, 2019</p>
+            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
+            <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+              из местных чудес природы.</p>
+            <h4 class="news-card__source">Медуза</h4>
+          </div>
+          <div class="news-card">
+            <img src="./images/image_07.png" class="news-card__image">
+            <p class="news-card__date">2 августа, 2019</p>
+            <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+            <h4 class="news-card__source">Риа</h4>
+          </div>
+        </div>
+        <buttton class="button news__result-button">Показать еще</buttton>
+      </div>
+
+    <section class="profile">
+      <div class="profile__user">
+        <img src="./images/author.png" alt="photo Daria" class="profile__image">
+        <div class="profile__container">
+          <h2 class="profile__title">Об авторе</h2>
+          <p class="profile__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="profile__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__name">© 2020  Supersite</p>
+        <nav class="footer__nav">
+          <a href="#" class="footer__link">Главная</a>
+          <a href="./about.html" class="footer__link">О проекте</a>
+          <a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a>
+        </nav>
+        <nav class="footer__container-icon">
+          <a href="https://github.com/DariaGritsienko" class="footer__icon"></a>
+          <a href="https://www.facebook.com/profile.php?id=100006418779777&ref=bookmarks" class="footer__icon"></a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/index.ca9b5a04ab149e307170.js"></script>
+</body>
+
+</html>
