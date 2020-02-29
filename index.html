@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Грициенко Дарья">
   <title>Diploma</title>
-  <link rel="stylesheet" href="styles/index.1834f87019844b0e387a.css">
+  <link rel="stylesheet" href="styles/index.ddbdd7bc0b3fd9fb6996.css">
 </head>
 
 <body>
@@ -24,39 +24,39 @@
           </nav>
         </div>
       </div>
-      <div class="header__browser header__browser_width">
+      <div class="header__browser">
         <h1 class="header__title header__title_color_white">Что в мире<br> творится?</h1>
         <p class="header__text header__text_color_white">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-        <div class="header__finder"><input type="text" id="news" placeholder="Введите тему новости"><button class="button header__button">Искать</button></div>
+        <form class="header__finder"><input type="text" type='text' id="news" required minlength='2' maxlength="30" placeholder="Введите тему новости"><button type="submit" class="button header__button">Искать</button></form>
       </div>
     </header>
 
-
-      <div class="news" style="display: none">
+    <section>
+      <div class="news" id="news_loader">
         <i class="news__circle-preloader"></i>
         <p class="news__text-preloader">Идет поиск новостей...</p>
       </div>
-      <div class='news' style="display: none">
+      <div class='news' id="news_error">
         <img src="./images/not-found.png" alt="sad smile not found information" class="news__image-notFound">
         <h2 class="news__title-notFound">Ничего не найдено</h2>
         <p class="news__text-notFound">К сожалению по вашему запросу<br>
           ничего не найдено.</p>
       </div>
-      <div class="news">
+      <div class="news" id="news_result">
         <div class="news__result-content">
-          <h2 class="news__result-title">Результаты поиска</h2>
+          <h2 class="news__result-title news__result-title_margin">Результаты поиска</h2>
           <a href="./analytics.html" class="news__result-link">Посмотреть аналитику <img src="./images/arrow.png" alt="arrow" class="news__result-arrow"></a>
         </div>
         <div class="news-list">
           <div class="news-card">
-            <img src="./images/image_08.png" class="news-card__image">
+            <img src="./images/image_08.png" alt="photo card" class="news-card__image">
             <p class="news-card__date">2 августа, 2019</p>
             <h3 class="news-card__title">Национальное достояние – парки</h3>
             <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
             <h4 class="news-card__source">Лента.ру</h4>
           </div>
           <div class="news-card">
-            <img src="./images/image_04.png" class="news-card__image">
+            <img src="./images/image_04.png" alt="photo card" class="news-card__image">
             <p class="news-card__date">2 августа, 2019</p>
             <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
             <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
@@ -64,7 +64,7 @@
             <h4 class="news-card__source">Медуза</h4>
           </div>
           <div class="news-card">
-            <img src="./images/image_07.png" class="news-card__image">
+            <img src="./images/image_07.png" alt="photo card" class="news-card__image">
             <p class="news-card__date">2 августа, 2019</p>
             <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
             <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
@@ -73,6 +73,7 @@
         </div>
         <buttton class="button news__result-button">Показать еще</buttton>
       </div>
+    </section>
 
     <section class="profile">
       <div class="profile__user">
@@ -94,8 +95,8 @@
           <a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a>
         </nav>
         <nav class="footer__container-icon">
-          <a href="https://github.com/DariaGritsienko" class="footer__icon"></a>
-          <a href="https://www.facebook.com/profile.php?id=100006418779777&ref=bookmarks" class="footer__icon"></a>
+          <a href="https://github.com/DariaGritsienko" target="_blank" class="footer__icon"></a>
+          <a href="https://www.facebook.com/profile.php?id=100006418779777&ref=bookmarks" target="_blank" class="footer__icon"></a>
         </nav>
       </div>
     </footer>

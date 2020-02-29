@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Грициенко Дарья">
     <title>Diploma</title>
-    <link rel="stylesheet" href="styles/about.3275499541aa226ba0c8.css">
+    <link rel="stylesheet" href="styles/about.b0212fd1ad0643066b12.css">
 </head>
 
 <body>
@@ -24,8 +24,8 @@
                 </nav>
             </div>
         </div>
-        <div class="header__browser header__browser_margin header__browser_margin_bottom">
-            <h1 class="header__title header__title_color_black">Клиентам</h1>
+        <div class="header__browser header__browser_width header__browser_margin header__browser_margin_bottom">
+            <h1 class="header__title header__title_color_black header__title_mini">Клиентам</h1>
             <p class="header__text header__text_color_black header__text_margin">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
             <p class="header__text header__text_color_black header__text_margin">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
             <p class="header__text header__text_color_black header__text_margin">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
@@ -72,21 +72,21 @@
 
     <section class="news">
         <div class="news__result-content">
-            <h2 class="news__result-title">История коммитов из GitHub</h2>
-            <a href="#" class="news__result-link">Открыть в GitHub <img src="./images/arrow.png" alt="arrow" class="news__result-arrow"></a>
+            <h2 class="news__result-title news__result-title_margin_none">История коммитов из GitHub</h2>
+            <a href="#" class="news__result-link" id="news_link">Открыть в GitHub <img src="./images/arrow.png" alt="arrow" class="news__result-arrow"></a>
         </div>
 
-        <div class="news-slider swiper-container">
+        <div class="news-slider swiper-container" id="swiper">
             <div class="news-slider_opacity"></div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide news-slide" id="swiper_slide_left">
                     <p class="news-slide__date">14 августа, 2019</p>
                     <div class="news-slide__container">
-                        <img src="./images/anton.png" class="news-slide__image">
-                        <span>
+                        <img src="./images/anton.png" alt="commit" class="news-slide__image">
+                        <div>
                             <h3 class="news-slide__title">Антон Долинин</h3>
                             <p class="news-slide__mail">anton@yandex.ru</p>
-                        </span>
+                        </div>
                     </div>
                     <p class="news-slide__text">Emmet (formerly Zen Coding) is a web-
                         developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
@@ -94,11 +94,11 @@
                 <div class="swiper-slide news-slide" id="swiper_slide_center">
                     <p class="news-slide__date">14 августа, 2019</p>
                     <div class="news-slide__container">
-                        <img src="./images/maria.png" class="news-slide__image">
-                        <span>
+                        <img src="./images/maria.png" alt="commit" class="news-slide__image">
+                        <div>
                             <h3 class="news-slide__title">Мария Фёдорова</h3>
                             <p class="news-slide__mail">mariiifed@yandex.ru</p>
-                        </span>
+                        </div>
                     </div>
                     <p class="news-slide__text">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open   Tools >
                         Plugins > Available plugins   and find and install Emmet plugin.</p>
@@ -106,11 +106,11 @@
                 <div class="swiper-slide news-slide" id="swiper_slide_right">
                     <p class="news-slide__date">14 августа, 2019</p>
                     <div class="news-slide__container">
-                        <img src="./images/inga.png" class="news-slide__image">
-                        <span>
+                        <img src="./images/inga.png" alt="commit" class="news-slide__image">
+                        <div>
                             <h3 class="news-slide__title">Инга Иванова</h3>
                             <p class="news-slide__mail">ingaiva@yandex.ru</p>
-                        </span>
+                        </div>
                     </div>
                     <p class="news-slide__text">With Emmet, you can type CSS-like expressions
                         that can be dynamically parsed, and produce
@@ -136,8 +136,8 @@
                 <a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a>
             </nav>
             <nav class="footer__container-icon">
-                <a href="https://github.com/DariaGritsienko" class="footer__icon"></a>
-                <a href="https://www.facebook.com/profile.php?id=100006418779777&ref=bookmarks" class="footer__icon"></a>
+                <a href="https://github.com/DariaGritsienko" target="_blank" class="footer__icon"></a>
+                <a href="https://www.facebook.com/profile.php?id=100006418779777&ref=bookmarks" target="_blank" class="footer__icon"></a>
             </nav>
         </div>
     </footer>
