@@ -1,0 +1,6 @@
+@import url(./_black/header_line_black.css);
+@import url(./_white/header_line_white.css);
+
+.header_line{
+    width: 100%;
+}
