@@ -7,3 +7,4 @@
 1. Для сборки проекта `npm run build` 
 2. Для подключения локального сервера `npm run dev` (для открытия введите в браузере `localhost:8080`)
 3. Чтобы задеплоить проект на gh-pages `npm run deploy` 
+Ссылка на сайт: https://dariagritsienko.github.io/diploma/index.html
