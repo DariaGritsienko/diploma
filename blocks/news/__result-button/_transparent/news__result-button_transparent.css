@@ -1,0 +1,10 @@
+.news__result-button.news__result-button_transparent{
+    background: transparent;
+    border: 1px solid #1A1B22;
+}
+
+@media screen and (min-width: 550px) {
+    .news__result-button.news__result-button_transparent{
+        display: none;
+    }
+}

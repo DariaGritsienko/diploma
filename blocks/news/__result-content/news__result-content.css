@@ -1,0 +1,29 @@
+.news__result-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 64px;
+    padding: 0 104px;
+}
+
+@media screen and (max-width: 915px) {
+    .news__result-content{
+        margin: 0 0 32px 0;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .news__result-content{
+        flex-direction: column;
+        margin: 0 0 37px 0;
+        align-items: normal;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .news__result-content{
+        padding: 0;
+        margin: 0 0 16px;
+    }
+}

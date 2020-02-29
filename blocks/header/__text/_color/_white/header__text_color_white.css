@@ -1,0 +1,11 @@
+.header__text_color_white{
+    color: #ffffff;
+}
+
+@media screen and (max-width: 495px) {
+    .header__text.header__text_color_white{
+        font-size: 20px;
+        margin-bottom: 64px;
+        line-height: 26px;
+    }
+}

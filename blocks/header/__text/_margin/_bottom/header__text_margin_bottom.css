@@ -1,0 +1,9 @@
+.header__text.header__text_margin_bottom{
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 945px) {
+    .header__text.header__text_margin_bottom{
+        margin-bottom: 64px;
+    }
+}

@@ -1,0 +1,26 @@
+@import url(./__image/news-card__image.css);
+@import url(./__text/news-card__text.css);
+@import url(./__title/news-card__title.css);
+@import url(./__source/news-card__source.css);
+@import url(./__date/news-card__date.css);
+
+.news-card{
+    position: relative;
+    padding-bottom: 62px;
+    background: #FFFFFF;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 7px 20px 2px rgba(8,29,45,0.1)
+}
+
+@media screen and (max-width: 915px) {
+    .news-card{
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .news-card{
+        box-shadow: none;
+    }
+}

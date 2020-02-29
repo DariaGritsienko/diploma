@@ -1,0 +1,39 @@
+@import url(./__circle-preloader/news__circle-preloader.css);
+@import url(./__text-preloader/news__text-preloader.css);
+@import url(./__text-notFound/news__text-notFound.css);
+@import url(./__title-notFound/news__title-notFound.css);
+@import url(./__image-notFound/news__image-notFound.css);
+@import url(./__result-arrow/news__result-arrow.css);
+@import url(./__result-content/news__result-content.css);
+@import url(./__result-link/news__result-link.css);
+@import url(./__result-button/news__result-button.css);
+@import url(./__result-title/news__result-title.css);
+
+.news{
+    background: #f5f6f7;
+    padding: 80px 0;
+}
+
+#news_error{
+    display: none;
+}
+
+#news_result{
+    display: none;
+}
+
+#news_loader{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .news{
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .news{
+        padding: 32px 16px 44px;
+    }
+}

@@ -1,0 +1,20 @@
+.days__content{
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.days__content:first-child{
+    justify-content: space-between;
+}
+
+.days__content:last-child{
+    padding-right: 0;
+}
+
+@media screen and (max-width: 735px) {
+    .days__content{
+        padding-right: 50px;
+    }
+}

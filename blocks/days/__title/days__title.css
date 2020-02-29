@@ -1,0 +1,16 @@
+.days__title{
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 48px;
+    margin-top: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 735px) {
+    .days__title{
+        margin-bottom: 16px;
+        font-size: 22px;
+    }
+}

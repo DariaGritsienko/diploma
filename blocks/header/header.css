@@ -1,0 +1,32 @@
+@import url(./__browser/header__browser.css);
+@import url(./__button/header__button.css);
+@import url(./__container/header__container.css);
+@import url(./__finder/header__finder.css);
+@import url(./__link/header__link.css);
+@import url(./__name/header__name.css);
+@import url(./__nav/header__nav.css);
+@import url(./__text/header__text.css);
+@import url(./__span/header__span.css);
+@import url(./__title/header__title.css);
+@import url(./_bg/header_bg.css);
+@import url(./_alignItems/header_alignItems.css);
+@import url(./__line/header__line.css);
+
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    padding-top: 22px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .header{
+    padding-top: 16px;
+  }
+}

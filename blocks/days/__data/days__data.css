@@ -1,0 +1,19 @@
+.days__data{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 67px 12px 0;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+}
+
+.days__data:last-child{
+    margin: 0;
+}
+
+@media screen and (max-width: 735px) {
+    .days__data{
+        margin: 0 16px 8px 0;
+    }
+}

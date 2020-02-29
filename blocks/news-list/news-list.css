@@ -1,0 +1,23 @@
+.news-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 16px 16px;
+    justify-content: center;
+    margin-bottom: 82px;
+}
+
+@media screen and (max-width: 915px) {
+    .news-list{
+        grid-template-columns: repeat(auto-fill, 218px);
+        grid-gap: 8px 8px;
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .news-list{
+        grid-template-columns: repeat(auto-fill, 288px);
+        grid-gap: 8px 8px;
+        margin-bottom: 13px;
+    }
+}

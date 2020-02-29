@@ -1,0 +1,13 @@
+.technology__container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .technology__container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

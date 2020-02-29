@@ -1,0 +1,12 @@
+.days__check{
+    position: absolute;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-style: normal;
+    padding-left: 6px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

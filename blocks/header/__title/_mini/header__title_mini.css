@@ -1,0 +1,18 @@
+.header__title.header__title_mini{
+    font-size: 40px;
+    line-height: 46px;
+    margin: 0 0 24px 0;
+}
+
+@media screen and (max-width: 945px) {
+    .header__title.header__title_mini{
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header__title.header__title_mini{
+        margin: 0 0 16px 0;
+    }
+}

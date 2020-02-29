@@ -1,0 +1,36 @@
+.header__finder{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#news{
+    width: 608px;
+    border-radius: 100px;
+    height: 64px;
+    box-sizing: border-box;
+    border: 1px solid #d1d2d6;
+    padding: 0 0 0 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 945px) {
+    #news{
+        width: 448px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__finder{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #news{
+        width: 288px;
+        height: 56px;
+        margin-bottom: 16px;
+        padding: 0 0 0 16px;
+    }
+}

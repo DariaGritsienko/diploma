@@ -1,0 +1,15 @@
+.footer__container-icon{
+    display: flex;
+}
+
+@media screen and (max-width: 650px) {
+    .footer__container-icon{
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .footer__container-icon{
+        order: 2;
+    }
+}

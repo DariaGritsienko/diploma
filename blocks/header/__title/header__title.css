@@ -1,0 +1,26 @@
+@import url(./_color/header__title_color.css);
+@import url(./_mini/header__title_mini.css);
+
+.header__title{
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    font-size: 60px;
+    font-family: 'Roboto Slab', sans-serif;
+    line-height: 64px;
+}
+
+@media screen and (max-width: 945px) {
+    .header__title{
+        font-size: 36px;
+        line-height: 40px;
+        margin: 0 0 16px 0;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__title{
+        font-size: 36px;
+        line-height: 40px;
+        margin: 0 0 16px 0;
+    }
+}

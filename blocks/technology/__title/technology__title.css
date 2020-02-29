@@ -1,0 +1,22 @@
+.technology__title{
+    margin: 0 194px 0 0;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Roboto Slab', sans-serif;
+    line-height: 46px;
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 1100px) {
+    .technology__title{
+        margin: 0 0 40px 0;
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .technology__title{
+        margin-left: 16px;
+    }
+}

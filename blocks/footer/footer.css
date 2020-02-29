@@ -1,0 +1,23 @@
+@import url(./__container/footer__container.css);
+@import url(./__container-icon/footer__container-icon.css);
+@import url(./__icon/footer__icon.css);
+@import url(./__link/footer__link.css);
+@import url(./__name/footer__name.css);
+@import url(./__nav/footer__nav.css);
+
+.footer{
+    padding-top: 33px;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer{
+        padding: 21px 40px 21px 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer{
+        padding: 20px 18px 22px 16px;
+    }
+}

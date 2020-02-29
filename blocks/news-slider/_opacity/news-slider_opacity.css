@@ -1,0 +1,19 @@
+.news-slider_opacity{
+    z-index: 2;
+    opacity: 0.7;
+    width: 88px;
+    position: absolute;
+    background: #F5F6F7;
+    height: 304px;
+}
+
+.news-slider_opacity-right{
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 769px) {
+    .news-slider_opacity {
+        display: none;
+    }
+}

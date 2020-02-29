@@ -1,0 +1,36 @@
+.header__button{
+    position: absolute;
+    background: #2F71E5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    border-radius: 100px;
+    height: 64px;
+    width: 168px;
+    border: 1px solid #2F71E5;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.header__button:hover{
+    background: #347EFF;
+}
+.header__button:active{
+    background: #2A65CC;
+}
+
+@media screen and (max-width: 945px) {
+    .header__button{
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__button{
+        position: relative;
+        width: 288px;
+        height: 56px;
+    }
+}

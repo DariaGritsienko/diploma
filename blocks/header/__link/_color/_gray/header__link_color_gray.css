@@ -1,3 +1,7 @@
-.header__link_color_black{
+.header__link_color_gray{
     color: #B6BCBF;
+}
+
+.header__link_color_gray:hover{
+    color: #1A1B22;
 }

@@ -1,0 +1,9 @@
+.days__span{
+    display: flex;
+    margin-bottom: 54px;
+    align-items: center;
+}
+
+.days__span:last-child{
+    margin: 0;
+}

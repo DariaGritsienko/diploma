@@ -1,0 +1,27 @@
+.days__num{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin: 16px 108px 8px 122px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.days__num:last-child{
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .days__num{
+        margin: 16px 40px 8px 120px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .days__num{
+        display: none;
+    }
+}

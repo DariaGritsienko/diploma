@@ -1,0 +1,18 @@
+.news__circle-preloader {
+    display: block;
+    width: 74px;
+    height: 74px;
+    border: 2px solid #444;
+    border-bottom-color: #B6BCBF;
+
+    border-radius: 50%;
+    margin: 0 auto 24px;
+
+    animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

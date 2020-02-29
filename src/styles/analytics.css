@@ -1,0 +1,10 @@
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/footer/footer.css);
+@import url(../../blocks/days/days.css);
+@import url(../../vendor/fonts.css);
+@import url(../../blocks/root/root.css);
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
