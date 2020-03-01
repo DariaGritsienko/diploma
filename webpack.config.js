@@ -73,7 +73,10 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=./vendor/[name].[ext]'
+        loader: 'file-loader?name=./vendor/[name].[ext]',
+        options: {
+          name: "vendor/[name].[ext]",
+        },
       }
     ]
   },
@@ -93,19 +96,19 @@ module.exports = {
       inject: false,
       template: './src/index.html',
       filename: 'index.html',
-      favicon: './images/favicon.ico'
+      favicon: './src/images/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/about.html',
       filename: 'about.html',
-      favicon: './images/favicon.ico'
+      favicon: './src/images/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/analytics.html',
       filename: 'analytics.html',
-      favicon: './images/favicon.ico'
+      favicon: './src/images/favicon.ico'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

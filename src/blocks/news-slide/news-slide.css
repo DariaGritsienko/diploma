@@ -1,0 +1,16 @@
+@import url(__title/news-slide__title.css);
+@import url(__image/news-slide__image.css);
+@import url(__date/news-slide__date.css);
+@import url(__text/news-slide__text.css);
+@import url(__container/news-slide__container.css);
+@import url(__mail/news-slide__mail.css);
+
+.news-slide{
+    background: #FFFFFF;
+    border-radius: 16px;
+    width: 400px;
+    height: 288px;
+    cursor: pointer;
+    padding-top: 16px;
+}
+

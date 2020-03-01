@@ -1,0 +1,28 @@
+@import url(__content/days__content.css);
+@import url(__container/days__container.css);
+@import url(__title/days__title.css);
+@import url(__data/days__data.css);
+@import url(__day/days__day.css);
+@import url(__diagram/days__diagram.css);
+@import url(__num/days__num.css);
+@import url(__check/days__check.css);
+@import url(__span/days__span.css);
+@import url(__box/days__box.css);
+@import url(__progress/days__progress.css);
+
+.days{
+    background: #F5F6F7;
+    padding: 80px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .days{
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .days{
+        padding: 24px 0;
+    }
+}
