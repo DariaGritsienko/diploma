@@ -1,7 +1,9 @@
 @import url(_transparent/news__result-button_transparent.css);
 
 .news__result-button{
-    margin: auto;
+    margin: 0 auto;
+    text-decoration: none;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
