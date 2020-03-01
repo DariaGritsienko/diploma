@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+.footer__link_li{
+    display: block;
+}
+
 .footer__link:hover{
     opacity: .5;
 }

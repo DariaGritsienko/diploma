@@ -1,9 +1,11 @@
 .header__link_color_white.header__link_active{
     border-bottom: 3px solid #ffffff;
+    padding-bottom: 20px;
 }
 .header__link_color_gray.header__link_active{
     border-bottom: 3px solid #1A1B22;
     color: #1A1B22;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
