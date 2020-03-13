@@ -1,0 +1,19 @@
+.header__container{
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+    margin: 0 101px 0 104px;
+    background: rgba(196, 196, 196, 0.01);
+}
+
+@media screen and (max-width: 945px) {
+    .header__container{
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__container{
+        margin: 0 14px;
+    }
+}

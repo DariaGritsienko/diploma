@@ -1,0 +1,22 @@
+.profile__image{
+    border-radius: 1000px;
+    width: 464px;
+    height: 464px;
+    margin-right: 56px;
+}
+
+@media screen and (max-width: 890px) {
+    .profile__image{
+        width: 232px;
+        height: 232px;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .profile__image{
+        width: 272px;
+        height: 272px;
+        margin: 0 0 24px;
+    }
+}

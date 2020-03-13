@@ -1,0 +1,13 @@
+@import url(../blocks/root/root.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/news/news.css);
+@import url(../blocks/news-list/news-list.css);
+@import url(../blocks/news-card/news-card.css);
+@import url(../vendor/fonts.css);
+
+body {
+  background-color: #fff;
+  margin: 0;
+}

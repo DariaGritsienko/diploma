@@ -1,0 +1,13 @@
+.news-slide__title{
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #1A1B22;
+    margin: 0 0 2px;
+}
+@media screen and (max-width: 550px) {
+    .news-slide__title{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,19 @@
+.news-card__source{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+}
+
+@media screen and (max-width: 915px) {
+    .news-card__source{
+        bottom: 16px;
+        left: 16px;
+    }
+}

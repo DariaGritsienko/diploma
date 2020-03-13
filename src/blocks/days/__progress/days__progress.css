@@ -1,0 +1,26 @@
+.days__progress{
+    font-weight: bold;
+    height: 24px;
+    width: 1000px;
+    -webkit-appearance: none;
+}
+
+.days__progress::-webkit-progress-bar{
+    background: #F5F6F7;
+}
+
+.days__progress::-webkit-progress-value{
+    background: #2F71E5;
+}
+
+@media screen and (max-width: 1228px) {
+    .days__progress{
+        width: 570px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .days__progress{
+        width: 190px;
+    }
+}

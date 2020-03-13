@@ -1,0 +1,25 @@
+.footer__link{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1A1B22;
+    text-decoration: none;
+}
+
+.footer__link_li{
+    display: block;
+}
+
+.footer__link:hover{
+    opacity: .5;
+}
+
+@media screen and (max-width: 650px) {
+    .footer__link{
+        margin-bottom: 25px;
+    }
+    .footer__link:last-child{
+        margin-bottom: 0;
+    }
+}

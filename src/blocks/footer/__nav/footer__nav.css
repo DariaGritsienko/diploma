@@ -1,0 +1,29 @@
+.footer__nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 406px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__nav{
+        max-width: 384px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer__nav{
+        flex-direction: column;
+        align-items: baseline;
+        order: 2;
+        max-width: 184px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .footer__nav{
+        order: 1;
+    }
+}

@@ -1,0 +1,15 @@
+.header__browser.header__browser_margin_bottom{
+    margin-bottom: 94px;
+}
+
+@media screen and (max-width: 945px) {
+    .header__browser.header__browser_margin.header__browser_margin_bottom{
+        margin-bottom: 44px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__browser.header__browser_margin.header__browser_margin_bottom{
+        margin-bottom: 24px;
+    }
+}

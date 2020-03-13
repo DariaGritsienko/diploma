@@ -1,0 +1,10 @@
+.news__title-notFound{
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #1A1B22;
+}

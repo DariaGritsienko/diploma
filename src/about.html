@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Дипломный проект">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Грициенко Дарья">
+    <title>Diploma</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="root">
+
+    <header class="header">
+        <div class="header__line header__line_black">
+            <div class="header__container header__container_shadow_black">
+                <h2 class="header__name header__name_color_black">NewsAnalyzer</h2>
+                <ul class="header__nav">
+                    <li class="header__link_li"><a href="./index.html" class="header__link header__link_color_gray">Главная</a></li>
+                    <li class="header__link_li"><a href="#" class="header__link header__link_active header__link_color_gray">О проекте</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__browser header__browser_width header__browser_margin header__browser_margin_bottom">
+            <h1 class="header__title header__title_color_black header__title_mini">Клиентам</h1>
+            <p class="header__text header__text_color_black header__text_margin">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+            <p class="header__text header__text_color_black header__text_margin">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+            <p class="header__text header__text_color_black header__text_margin">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+            <p class="header__text header__text_color_black header__text_margin">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+            <p class="header__text header__text_color_black header__text_margin">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+        </div>
+    </header>
+
+    <section class="technology">
+        <div class="technology__content">
+            <h2 class="technology__title">Используемые<br>
+                технологии</h2>
+            <div class="technology__container">
+                <div class="technology__element">
+                    <p class="technology__name">HTML</p>
+                    <picture>
+                        <source srcset="<%=require('./images/html.png')%>">
+                        <img src="<%=require('./images/html.png')%>" alt="html" class="technology__image">
+                    </picture>
+                </div>
+                <div class="technology__element">
+                    <p class="technology__name">CSS</p>
+                    <picture>
+                        <source srcset="<%=require('./images/css.png')%>">
+                        <img src="<%=require('./images/css.png')%>" alt="css" class="technology__image">
+                    </picture>
+                </div>
+                <div class="technology__element">
+                    <p class="technology__name">Java Script</p>
+                    <picture>
+                        <source srcset="<%=require('./images/js.png')%>">
+                        <img src="<%=require('./images/js.png')%>" alt="java script" class="technology__image">
+                    </picture>
+                </div>
+                <div class="technology__element">
+                    <p class="technology__name">Webpack</p>
+                    <picture>
+                        <source srcset="<%=require('./images/webpack.png')%>">
+                        <img src="<%=require('./images/webpack.png')%>" alt="webpack" class="technology__image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile">
+        <div class="profile__user">
+            <picture>
+                <source srcset="<%=require('./images/author.png')%>">
+                <img src="<%=require('./images/author.png')%>" alt="photo Daria" class="profile__image">
+            </picture>
+            <div class="profile__container">
+                <h2 class="profile__title">Об авторе</h2>
+                <p class="profile__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+                <p class="profile__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news__result-content">
+            <h2 class="news__result-title news__result-title_margin_none">История коммитов из GitHub</h2>
+            <a href="#" class="news__result-link" id="news_link">
+                Открыть в GitHub
+                <picture>
+                    <source srcset="<%=require('./images/arrow.png')%>">
+                    <img src="<%=require('./images/arrow.png')%>" alt="arrow" class="news__result-arrow">
+                </picture>
+            </a>
+        </div>
+
+        <div class="news-slider swiper-container" id="swiper">
+            <div class="news-slider_opacity"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide news-slide" id="swiper_slide_left">
+                    <p class="news-slide__date">14 августа, 2019</p>
+                    <div class="news-slide__container">
+                        <picture>
+                            <source srcset="<%=require('./images/anton.png')%>">
+                            <img src="<%=require('./images/anton.png')%>" alt="commit" class="news-slide__image">
+                        </picture>
+                        <div>
+                            <h3 class="news-slide__title">Антон Долинин</h3>
+                            <p class="news-slide__mail">anton@yandex.ru</p>
+                        </div>
+                    </div>
+                    <p class="news-slide__text">Emmet (formerly Zen Coding) is a web-
+                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                </div>
+                <div class="swiper-slide news-slide" id="swiper_slide_center">
+                    <p class="news-slide__date">14 августа, 2019</p>
+                    <div class="news-slide__container">
+                        <picture>
+                            <source srcset="<%=require('./images/maria.png')%>">
+                            <img src="<%=require('./images/maria.png')%>" alt="commit" class="news-slide__image">
+                        </picture>
+                        <div>
+                            <h3 class="news-slide__title">Мария Фёдорова</h3>
+                            <p class="news-slide__mail">mariiifed@yandex.ru</p>
+                        </div>
+                    </div>
+                    <p class="news-slide__text">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open   Tools >
+                        Plugins > Available plugins   and find and install Emmet plugin.</p>
+                </div>
+                <div class="swiper-slide news-slide" id="swiper_slide_right">
+                    <p class="news-slide__date">14 августа, 2019</p>
+                    <div class="news-slide__container">
+                        <picture>
+                            <source srcset="<%=require('./images/inga.png')%>">
+                            <img src="<%=require('./images/inga.png')%>" alt="commit" class="news-slide__image">
+                        </picture>
+                        <div>
+                            <h3 class="news-slide__title">Инга Иванова</h3>
+                            <p class="news-slide__mail">ingaiva@yandex.ru</p>
+                        </div>
+                    </div>
+                    <p class="news-slide__text">With Emmet, you can type CSS-like expressions
+                        that can be dynamically parsed, and produce
+                        output depending on what you type in the abb...</p>
+                </div>
+            </div>
+            <div class="news-slider_opacity news-slider_opacity-right"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next" id="swiper_next"></div>
+            <div class="swiper-button-prev" id="swiper_prev"></div>
+        </div>
+        <button class="news__result-button news__result-button_transparent">Открыть в GitHub</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__name">© 2020  Supersite</p>
+            <ul class="footer__nav">
+                <li class="footer__link_li"><a href="./index.html" class="footer__link">Главная</a></li>
+                <li class="footer__link_li"><a href="#" class="footer__link">О проекте</a></li>
+                <li class="footer__link_li"><a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a></li>
+            </ul>
+            <nav class="footer__container-icon">
+                <a href="https://github.com/DariaGritsienko" target="_blank" class="footer__icon"></a>
+                <a href="https://www.facebook.com/profile.php?id=100006418779777&ref=bookmarks" target="_blank" class="footer__icon"></a>
+            </nav>
+        </div>
+    </footer>
+
+</div>
+<script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

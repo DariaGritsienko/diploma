@@ -1,0 +1,11 @@
+.days__container{
+    border-bottom: 1px solid #1A1B22;
+    margin: 0 104px;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .days__container{
+        margin: 0 16px 18px 0;
+    }
+}

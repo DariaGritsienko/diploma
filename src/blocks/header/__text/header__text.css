@@ -1,0 +1,25 @@
+@import url(_color/header__text_color.css);
+@import url(_margin/header__text_margin.css);
+@import url(_display/header__text_display.css);
+
+.header__text{
+    margin: 0 0 64px 0;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 945px) {
+    .header__text{
+        margin: 0 0 24px 0;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__text{
+        font-size: 18px;
+        margin-bottom: 64px;
+        line-height: 24px;
+    }
+}

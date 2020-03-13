@@ -1,0 +1,15 @@
+.days__box{
+    margin-left: 104px;
+}
+
+@media screen and (max-width: 945px) {
+    .days__box{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .days__box{
+        margin-left: 16px;
+    }
+}

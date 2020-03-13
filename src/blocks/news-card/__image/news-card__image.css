@@ -1,0 +1,19 @@
+.news-card__image{
+    height: 272px;
+    border-top-left-radius: 16px;
+    margin-bottom: 20px;
+    border-top-right-radius: 16px;
+}
+
+@media screen and (max-width: 915px) {
+    .news-card__image{
+        height: 148px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .news-card__image{
+        height: 196px;
+    }
+}

@@ -1,0 +1,26 @@
+@import url(_width/header__browser_width.css);
+@import url(_margin/header__browser_margin.css);
+
+.header__browser{
+    margin-bottom: 80px;
+    max-width: 608px;
+}
+
+@media screen and (max-width: 945px) {
+    .header__browser{
+        margin-bottom: 48px;
+        max-width: 448px;
+    }
+    #header_analytics{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__browser{
+        max-width: 288px;
+    }
+    #header_analytics{
+        margin-bottom: 24px;
+    }
+}

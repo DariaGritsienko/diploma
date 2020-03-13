@@ -1,0 +1,13 @@
+.news-slide__date{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 16px 24px;
+    color: #B6BCBF;
+}
+
+@media screen and (max-width: 550px) {
+    .news-slide__date{
+        margin: 0 0 16px 11px;
+    }
+}

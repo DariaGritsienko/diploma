@@ -1,0 +1,10 @@
+.news-slide__container{
+    display: flex;
+    margin: 0 0 16px 24px;
+}
+
+@media screen and (max-width: 550px) {
+    .news-slide__container{
+        margin: 0 0 16px 17px;
+    }
+}

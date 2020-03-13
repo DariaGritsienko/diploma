@@ -1,0 +1,17 @@
+@import url(_bottom/header__browser_margin_bottom.css);
+
+.header__browser.header__browser_margin{
+    margin-left: 104px;
+}
+
+@media screen and (max-width: 945px) {
+    .header__browser.header__browser_margin{
+        margin: 0 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header__browser.header__browser_margin{
+        margin: 0 0 0 16px;
+    }
+}
