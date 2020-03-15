@@ -2,8 +2,8 @@ class Api {
 
     getInfo(){
         let title = document.getElementById('news').value;
-        sessionStorage.setItem('titleNews', title);
-        return fetch(`http://newsapi.org/v2/everything?q=${title}&from=${param}&language=ru&pageSize=100&apiKey=20521388801e47aeb05ce2f35e262116`)
+        localStorage.setItem('titleNews', title);
+        return fetch(`https://newsapi.org/v2/everything?q=${title}&from=${param}&language=ru&pageSize=100&apiKey=20521388801e47aeb05ce2f35e262116`)
             .then((res) => {
                 if(res.ok){
                     return res.json();
@@ -36,8 +36,8 @@ for (let index = 7; index >= 1; index -= 1){
     let newdate = new Date(dtms - ((24 * 60 * 60 * 1000) * index));
     let param = JSON.stringify(newdate).split('"')[1].split('T')[0];
 
-    sessionStorage.setItem(`weekDay_${index}`, `${param.split('-')[2]}, ${getWeekDay(newdate)[0]}`);
-    sessionStorage.setItem('month', getWeekDay(newdate)[1]);
+    localStorage.setItem(`weekDay_${index}`, `${param.split('-')[2]}, ${getWeekDay(newdate)[0]}`);
+    localStorage.setItem('month', getWeekDay(newdate)[1]);
 
 }
 

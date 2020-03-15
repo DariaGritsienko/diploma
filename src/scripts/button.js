@@ -36,7 +36,7 @@ document.querySelector('.header__finder').addEventListener('submit', function (e
         .then((result) => {
             button.notFound(true);
             newsList.render(result.articles);
-            sessionStorage.setItem('articles', JSON.stringify(result.articles));
+            localStorage.setItem('articles', JSON.stringify(result.articles));
         })
         .catch((err) => {
             button.notFound(false);
