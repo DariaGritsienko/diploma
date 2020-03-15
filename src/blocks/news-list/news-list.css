@@ -6,6 +6,11 @@
     margin-bottom: 82px;
 }
 
+.news-list.news-list_height{
+    max-height: 1280px;
+    overflow: hidden;
+}
+
 @media screen and (max-width: 915px) {
     .news-list{
         grid-template-columns: repeat(auto-fill, 218px);

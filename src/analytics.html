@@ -27,9 +27,9 @@
         </div>
         <div class="header__browser header__browser_margin" id="header_analytics">
             <p class="header__text header__text_color_gray header__text_margin_bottom header__text_display"><a href="./index.html" class="header__text header__text_color_black">Главная</a> / Аналитика</p>
-            <h1 class="header__title_color_black header__title header__title_mini">Вы просили: <span>«Путешествия»</span></h1>
-            <p class="header__text header__text_color_black header__text_margin_mini">Новостей за неделю: <span class="header__span">34 324</span></p>
-            <p class="header__text header__text_color_black header__text_margin">Упоминаний в загаловках: <span class="header__span">235</span></p>
+            <h1 class="header__title_color_black header__title header__title_mini">Вы просили: <span id="header__title"></span></h1>
+            <p class="header__text header__text_color_black header__text_margin_mini">Новостей за неделю: <span class="header__span" id="header__week-news"></span></p>
+            <p class="header__text header__text_color_black header__text_margin">Упоминаний в загаловках: <span class="header__span" id="header__checked-news"></span></p>
         </div>
     </header>
 
@@ -37,28 +37,28 @@
         <div class="days__box">
             <h2 class="days__title">Аналитика по дням</h2>
             <div class="days__container">
-                <p class="days__data">Дата<br><span>(Август)</span></p>
+                <p class="days__data">Дата<br><span id="days__month"></span></p>
                 <p class="days__data">Кол-во упоминаний</p>
             </div>
             <p class="days__num">0<span>25</span><span>50</span><span>75</span><span>100</span></p>
             <div class="days__diagram">
                 <div class="days__content">
-                    <p class="days__day">19, пн</p>
-                    <p class="days__day">20, вт</p>
-                    <p class="days__day">21, ср</p>
-                    <p class="days__day">22, чт</p>
-                    <p class="days__day">23, пт</p>
-                    <p class="days__day">24, сб</p>
-                    <p class="days__day">25, вс</p>
+                    <p class="days__day" id="days_1"></p>
+                    <p class="days__day" id="days_2"></p>
+                    <p class="days__day" id="days_3"></p>
+                    <p class="days__day" id="days_4"></p>
+                    <p class="days__day" id="days_5"></p>
+                    <p class="days__day" id="days_6"></p>
+                    <p class="days__day" id="days_7"></p>
                 </div>
                 <div class="days__content">
-                    <span class="days__span"><progress max="100" value="15" class="days__progress"></progress><em class="days__check">15</em></span>
-                    <span class="days__span"><progress max="100" value="18" class="days__progress"></progress><em class="days__check">18</em></span>
-                    <span class="days__span"><progress max="100" value="11" class="days__progress"></progress><em class="days__check">11</em></span>
-                    <span class="days__span"><progress max="100" value="39" class="days__progress"></progress><em class="days__check">39</em></span>
-                    <span class="days__span"><progress max="100" value="45" class="days__progress"></progress><em class="days__check">45</em></span>
-                    <span class="days__span"><progress max="100" value="73" class="days__progress"></progress><em class="days__check">73</em></span>
-                    <span class="days__span"><progress max="100" value="34" class="days__progress"></progress><em class="days__check">34</em></span>
+                    <span class="days__span"><progress max="100" class="days__progress" id="progress_1"></progress><em class="days__check" id="check_1"></em></span>
+                    <span class="days__span"><progress max="100" class="days__progress" id="progress_2"></progress><em class="days__check" id="check_2"></em></span>
+                    <span class="days__span"><progress max="100" class="days__progress" id="progress_3"></progress><em class="days__check" id="check_3"></em></span>
+                    <span class="days__span"><progress max="100" class="days__progress" id="progress_4"></progress><em class="days__check" id="check_4"></em></span>
+                    <span class="days__span"><progress max="100" class="days__progress" id="progress_5"></progress><em class="days__check" id="check_5"></em></span>
+                    <span class="days__span"><progress max="100" class="days__progress" id="progress_6"></progress><em class="days__check" id="check_6"></em></span>
+                    <span class="days__span"><progress max="100" class="days__progress" id="progress_7"></progress><em class="days__check" id="check_7"></em></span>
                 </div>
             </div>
             <p class="days__num">0<span>25</span><span>50</span><span>75</span><span>100</span></p>

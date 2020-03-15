@@ -18,7 +18,9 @@
     text-align: center;
     color: #1A1B22;
 }
-
+.news__result-button.news__result-button_none{
+    display: none;
+}
 .news__result-button:hover{
     opacity: 0.9;
 }

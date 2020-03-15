@@ -6,6 +6,10 @@
     padding: 0 104px;
 }
 
+.news_result.news_result_active{
+    display: block;
+}
+
 @media screen and (max-width: 915px) {
     .news__result-content{
         margin: 0 0 32px 0;
