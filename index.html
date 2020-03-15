@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Грициенко Дарья">
   <title>Diploma</title>
-  <link rel="stylesheet" href="styles/index.61e37fea160ec674cf0d.css">
+  <link rel="stylesheet" href="styles/index.bfe22bf94bd0ce07a711.css">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
@@ -33,56 +33,23 @@
     </header>
 
     <section>
-      <div class="news" id="news_loader">
+      <div class="news news_loader">
         <i class="news__circle-preloader"></i>
         <p class="news__text-preloader">Идет поиск новостей...</p>
       </div>
-      <div class='news' id="news_error">
-        <picture>
-          <source srcset="./images/not-found.png">
-          <img src="./images/not-found.png" alt="sad smile not found information" class="news__image-notFound">
-        </picture>
+      <div class='news news_error'>
+        <img src="./images/not-found.png" alt="sad smile not found information" class="news__image-notFound">
         <h2 class="news__title-notFound">Ничего не найдено</h2>
         <p class="news__text-notFound">К сожалению по вашему запросу<br>
           ничего не найдено.</p>
       </div>
-      <div class="news" id="news_result">
+      <div class="news news_result">
         <div class="news__result-content">
           <h2 class="news__result-title news__result-title_margin">Результаты поиска</h2>
           <a href="./analytics.html" class="news__result-link">Посмотреть аналитику <img src="./images/arrow.png" alt="arrow" class="news__result-arrow"></a>
         </div>
-        <div class="news-list">
-          <div class="news-card">
-            <picture>
-              <source srcset="./images/image_08.png">
-              <img src="./images/image_08.png" alt="photo card" class="news-card__image">
-            </picture>
-            <p class="news-card__date">2 августа, 2019</p>
-            <h3 class="news-card__title">Национальное достояние – парки</h3>
-            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-            <h4 class="news-card__source">Лента.ру</h4>
-          </div>
-          <div class="news-card">
-            <picture>
-              <source srcset="./images/image_04.png">
-              <img src="./images/image_04.png" alt="photo card" class="news-card__image">
-            </picture>
-            <p class="news-card__date">2 августа, 2019</p>
-            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-            <h4 class="news-card__source">Медуза</h4>
-          </div>
-          <div class="news-card">
-            <picture>
-              <source srcset="./images/image_07.png">
-              <img src="./images/image_07.png" alt="photo card" class="news-card__image">
-            </picture>
-            <p class="news-card__date">2 августа, 2019</p>
-            <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <h4 class="news-card__source">Риа</h4>
-          </div>
+        <div class="news-list news-list_height">
+
         </div>
         <input class="button news__result-button" value="Показать еще" type="button">
       </div>
@@ -90,10 +57,7 @@
 
     <section class="profile">
       <div class="profile__user">
-        <picture>
-          <source srcset="./images/author.png">
-          <img src="./images/author.png" alt="photo Daria" class="profile__image">
-        </picture>
+        <img src="./images/author.png" alt="photo Daria" class="profile__image">
         <div class="profile__container">
           <h2 class="profile__title">Об авторе</h2>
           <p class="profile__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -117,7 +81,7 @@
       </div>
     </footer>
   </div>
-  <script src="scripts/index.ca9b5a04ab149e307170.js"></script>
+  <script src="scripts/index.f214d59905ce67d57607.js"></script>
 </body>
 
 </html>
