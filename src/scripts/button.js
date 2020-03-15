@@ -37,6 +37,9 @@ document.querySelector('.header__finder').addEventListener('submit', function (e
             button.notFound(true);
             newsList.render(result.articles);
             localStorage.setItem('articles', JSON.stringify(result.articles));
+            if (result.articles.length === 0){
+                button.notFound(false);
+            }
         })
         .catch((err) => {
             button.notFound(false);
