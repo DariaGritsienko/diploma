@@ -3,34 +3,35 @@ const titleNews = localStorage.getItem('titleNews');
 const month = localStorage.getItem('month');
 let index = 0;
 let indexPrev = 7;
-let arr = [];
+const indexWeek = 7;
+let newArrayNews = [];
 
-document.getElementById('header__week-news').textContent = `${data.length}`;
-document.getElementById('header__title').textContent = `«${titleNews}»`;
-document.getElementById('days__month').textContent = `(${month})`;
+document.querySelector('#header__week-news').textContent = `${data.length}`;
+document.querySelector('#header__title').textContent = `«${titleNews}»`;
+document.querySelector('#days__month').textContent = `(${month})`;
 
-for (let index = 1; index <= 7; index += 1){
-    document.getElementById(`days_${index}`).textContent = localStorage.getItem(`weekDay_${indexPrev}`);
+for (let index = 1; index <= indexWeek; index += 1){
+    document.querySelector(`#days_${index}`).textContent = localStorage.getItem(`weekDay_${indexPrev}`);
     indexPrev -= 1;
 }
 
-data.forEach(news => {
-    if (news.title.toLowerCase().includes(titleNews.toLowerCase())){
-        arr[index] = news;
+data.forEach(dataNews => {
+    if (dataNews.title.toLowerCase().includes(titleNews.toLowerCase())){
+        newArrayNews[index] = dataNews;
         index += 1;
     }
 });
 
-document.getElementById('header__checked-news').textContent = `${index}`;
+document.querySelector('#header__checked-news').textContent = `${index}`;
 
-for (let index = 1; index <= 7; index += 1){
+for (let index = 1; index <= indexWeek; index += 1){
     let check = 0;
-    arr.forEach(news => {
-        if(JSON.stringify(news.publishedAt).split('"')[1].split('T')[0].includes(document.getElementById(`days_${index}`).textContent.split(', ')[0])) {
+    newArrayNews.forEach(news => {
+        if(JSON.stringify(news.publishedAt).split('"')[1].split('T')[0].includes(document.querySelector(`#days_${index}`).textContent.split(', ')[0])) {
             check += 1;
         }
     });
-    document.getElementById(`progress_${index}`).value = check;
-    document.getElementById(`check_${index}`).textContent = check
+    document.querySelector(`#progress_${index}`).value = check;
+    document.querySelector(`#check_${index}`).textContent = check
 }
 

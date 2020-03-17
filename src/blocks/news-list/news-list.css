@@ -7,7 +7,8 @@
 }
 
 .news-list.news-list_height{
-    max-height: 1280px;
+    --max-height: 170px;
+    max-height: calc(var(--max-height) + 1110px);
     overflow: hidden;
 }
 
