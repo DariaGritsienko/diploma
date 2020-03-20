@@ -2,10 +2,10 @@ class Api {
 
     getInfo(){
         let title = document.querySelector('#news').value;
-        localStorage.setItem('titleNews', title);
         return fetch(`https://newsapi.org/v2/everything?q=${title}&from=${param}&language=ru&pageSize=100&apiKey=20521388801e47aeb05ce2f35e262116`)
             .then((res) => {
                 if(res.ok){
+                    sessionStorage.setItem('titleNews', title);
                     return res.json();
                 } else{
                     return Promise.reject(res.status);
@@ -37,8 +37,8 @@ for (let index = indexWeek; index >= 1; index -= 1){
     const newdate = new Date(dtms - ((24 * 60 * 60 * 1000) * index));
     const param = JSON.stringify(newdate).split('"')[1].split('T')[0];
 
-    localStorage.setItem(`weekDay_${index}`, `${param.split('-')[2]}, ${getWeekDay(newdate)[0]}`);
-    localStorage.setItem('month', getWeekDay(newdate)[1]);
+    sessionStorage.setItem(`weekDay_${index}`, `${param.split('-')[2]}, ${getWeekDay(newdate)[0]}`);
+    sessionStorage.setItem('month', getWeekDay(newdate)[1]);
 
 }
 

@@ -26,7 +26,4 @@ export const swiper = new Swiper('.swiper-container', {
         }
     }
 });
-setTimeout(function () {
-    swiper.update();
-}, 1000);
 
