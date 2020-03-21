@@ -4,15 +4,15 @@ class CardList {
         this.place = place;
     }
 
-    render(array) {
-        array.forEach(res => {
-            const info = {source:res.source.name, description: res.description, publishedAt: res.publishedAt, title: res.title, urlToImage: res.urlToImage};
+    render(articles) {
+        articles.forEach(article => {
+            const info = {source:article.source.name, description: article.description, publishedAt: article.publishedAt, title: article.title, urlToImage: article.urlToImage};
             this.place.appendChild(this.card.create(info));
         })
     }
-    renderCommit(array) {
-        array.forEach(res => {
-            const infoCommit = {name: res.commit.committer.name, email: res.commit.committer.email, date: res.commit.committer.date, message: res.commit.message, avatar_url: res.author.avatar_url };
+    renderCommit(articles) {
+        articles.forEach(article => {
+            const infoCommit = {name: article.commit.committer.name, email: article.commit.committer.email, date: article.commit.committer.date, message: article.commit.message, avatar_url: article.author.avatar_url };
             this.place.appendSlide(this.card.createCommit(infoCommit));
         })
     }
