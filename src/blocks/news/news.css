@@ -17,7 +17,9 @@
 .news_error{
     display: none;
 }
-
+.news_error-ups{
+    display: none;
+}
 .news_result{
     display: none;
 }
@@ -29,7 +31,9 @@
 .news_error_active{
     display: block;
 }
-
+.news_error-ups_active{
+    display: block;
+}
 .news_result_active{
     display: block;
 }

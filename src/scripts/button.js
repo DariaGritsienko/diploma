@@ -14,12 +14,24 @@ class Button{
     notFound(isFound){
         
         if (!isFound) {
-            newsError.classList.add('news_loader_error');
+            newsError.classList.add('news_error_active');
             newsResult.classList.remove('news_result_active');
         }else{
-            newsError.classList.remove('news_loader_error');
+            newsError.classList.remove('news_error_active');
             newsResult.classList.add('news_result_active');
         }
+    }
+
+    error(isError){
+
+        if (!isError) {
+            newsErrorUps.classList.add('news_error-ups_active');
+            newsResult.classList.remove('news_result_active');
+        }else{
+            newsErrorUps.classList.remove('news_error-ups_active');
+            newsResult.classList.add('news_result_active');
+        }
+
     }
 
     showMore(){
@@ -44,6 +56,7 @@ import {newsList} from './cardList'
 const spinner = document.querySelector('.news_loader');
 export const button = new Button(spinner);
 const newsError = document.querySelector('.news_error');
+const newsErrorUps = document.querySelector('.news_error-ups');
 const newsResult = document.querySelector('.news_result');
 const newsContainer = document.querySelector('.news-list');
 const newsResultButton = document.querySelector('.news__result-button');
@@ -73,7 +86,7 @@ document.querySelector('.header__finder').addEventListener('submit', function (e
             }
         })
         .catch((err) => {
-            button.notFound(false);
+            button.error(false);
             console.error(`Ошибка: ${err}`);
         })
         .finally((res) =>{
