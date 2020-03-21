@@ -1,6 +1,7 @@
 class Button{
-    constructor(spinner){
+    constructor(spinner, newsList){
         this.spinner = spinner;
+        this.newsList = newsList;
     }
 
     renderLoading(isLoading){
@@ -35,37 +36,29 @@ class Button{
     }
 
     showMore(){
-        counter += 1;
-        let heightCard;
-        if(window.screen.width <= 650){
-            counter += 1
-            heightCard = 484;
-        }else{
-            heightCard = 758;
+        const newCard = 3;
+        let newCardPos = cardChecker + newCard;
+        newsContainer.classList.remove('news-list_height')
+        this.newsList.render((JSON.parse(localStorage.getItem('articles'))).slice(cardChecker,newCardPos))
+        cardChecker = newCardPos;
+        if(JSON.parse(localStorage.getItem('articles')).length <= document.querySelector('.news-list').childNodes.length){
+            newsResultButton.classList.add('news__result-button_none')
+            cardChecker = 6;
         }
-        
-        let indexHeight = heightCard*counter;
-        if(newsContainer.offsetHeight >= newsContainer.scrollHeight){
-            newsResultButton.classList.add('news__result-button_none');
-        }
-        newsContainer.style.setProperty('--max-height', indexHeight + 'px')
     }
 }
 import {api} from './api'
 import {newsList} from './cardList'
 const spinner = document.querySelector('.news_loader');
-export const button = new Button(spinner);
+export const button = new Button(spinner, newsList);
 const newsError = document.querySelector('.news_error');
 const newsErrorUps = document.querySelector('.news_error-ups');
 const newsResult = document.querySelector('.news_result');
 const newsContainer = document.querySelector('.news-list');
 const newsResultButton = document.querySelector('.news__result-button');
-let counter = 2;
+let cardChecker = 6;
+const firstGroupCard = 6;
 
-if(localStorage.getItem('articles').length !== 0){
-    newsResult.classList.add('news_result_active')
-    newsList.render(JSON.parse(localStorage.getItem('articles')));
-}
 if(localStorage.getItem('titleNews').length !== 0){
     document.querySelector('#news').value = localStorage.getItem('titleNews')
 }
@@ -79,7 +72,8 @@ document.querySelector('.header__finder').addEventListener('submit', function (e
         .then((result) => {
             button.notFound(true);
             document.querySelectorAll('.news-card').forEach(news => {news.remove()})
-            newsList.render(result.articles);
+            newsList.render(result.articles.slice(0,firstGroupCard));
+            newsResultButton.classList.remove('news__result-button_none')
             localStorage.setItem('articles', JSON.stringify(result.articles));
             if (result.articles.length === 0){
                 button.notFound(false);
@@ -94,6 +88,13 @@ document.querySelector('.header__finder').addEventListener('submit', function (e
         });
     
 });
+
+if(localStorage.length !== 0){
+    if(localStorage.getItem('articles').length !== 0){
+        newsResult.classList.add('news_result_active')
+        newsList.render((JSON.parse(localStorage.getItem('articles'))).slice(0,firstGroupCard));
+    }
+}
 
 newsResultButton.addEventListener('click', function () {
     button.showMore();

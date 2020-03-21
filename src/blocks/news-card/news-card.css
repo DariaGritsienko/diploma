@@ -8,6 +8,7 @@
     position: relative;
     padding-bottom: 62px;
     height: 680px;
+    overflow: hidden;
     background: #FFFFFF;
     cursor: pointer;
     border-radius: 16px;
@@ -23,6 +24,5 @@
 @media screen and (max-width: 650px) {
     .news-card{
         box-shadow: none;
-        height: 441px;
     }
 }

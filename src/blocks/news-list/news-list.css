@@ -6,12 +6,8 @@
     margin-bottom: 82px;
 }
 
-:root{
-    --max-height: 1500px;
-}
-
 .news-list.news-list_height{
-    max-height: var(--max-height);
+    max-height: 1500px;
     overflow: hidden;
 }
 
@@ -28,8 +24,5 @@
         grid-template-columns: repeat(auto-fill, 288px);
         grid-gap: 8px 8px;
         margin-bottom: 13px;
-    }
-    :root{
-        --max-height: 1452px;
     }
 }
