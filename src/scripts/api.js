@@ -1,7 +1,7 @@
 class Api {
 
     getInfo(){
-        let title = document.querySelector('#news').value;
+        const title = document.querySelector('#news').value;
         return fetch(`https://newsapi.org/v2/everything?q=${title}&from=${param}&language=ru&pageSize=100&apiKey=20521388801e47aeb05ce2f35e262116`)
             .then((res) => {
                 if(res.ok){
