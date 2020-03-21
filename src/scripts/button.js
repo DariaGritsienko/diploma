@@ -62,12 +62,12 @@ const newsContainer = document.querySelector('.news-list');
 const newsResultButton = document.querySelector('.news__result-button');
 let counter = 2;
 
-if(sessionStorage.getItem('articles').length !== 0){
+if(localStorage.getItem('articles').length !== 0){
     newsResult.classList.add('news_result_active')
-    newsList.render(JSON.parse(sessionStorage.getItem('articles')));
+    newsList.render(JSON.parse(localStorage.getItem('articles')));
 }
-if(sessionStorage.getItem('titleNews').length !== 0){
-    document.querySelector('#news').value = sessionStorage.getItem('titleNews')
+if(localStorage.getItem('titleNews').length !== 0){
+    document.querySelector('#news').value = localStorage.getItem('titleNews')
 }
 
 document.querySelector('.header__finder').addEventListener('submit', function (e) {
@@ -80,7 +80,7 @@ document.querySelector('.header__finder').addEventListener('submit', function (e
             button.notFound(true);
             document.querySelectorAll('.news-card').forEach(news => {news.remove()})
             newsList.render(result.articles);
-            sessionStorage.setItem('articles', JSON.stringify(result.articles));
+            localStorage.setItem('articles', JSON.stringify(result.articles));
             if (result.articles.length === 0){
                 button.notFound(false);
             }

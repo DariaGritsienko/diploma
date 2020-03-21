@@ -1,6 +1,6 @@
-const data = JSON.parse(sessionStorage.getItem('articles'));
-const titleNews = sessionStorage.getItem('titleNews');
-const month = sessionStorage.getItem('month');
+const data = JSON.parse(localStorage.getItem('articles'));
+const titleNews = localStorage.getItem('titleNews');
+const month = localStorage.getItem('month');
 let index = 0;
 let indexPrev = 7;
 const indexWeek = 7;
@@ -11,7 +11,7 @@ document.querySelector('#header__title').textContent = `«${titleNews}»`;
 document.querySelector('#days__month').textContent = `(${month})`;
 
 for (let index = 1; index <= indexWeek; index += 1){
-    document.querySelector(`#days_${index}`).textContent = sessionStorage.getItem(`weekDay_${indexPrev}`);
+    document.querySelector(`#days_${index}`).textContent = localStorage.getItem(`weekDay_${indexPrev}`);
     indexPrev -= 1;
 }
 
