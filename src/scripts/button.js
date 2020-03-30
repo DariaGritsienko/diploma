@@ -59,10 +59,11 @@ const newsResultButton = document.querySelector('.news__result-button');
 let cardChecker = 6;
 const firstGroupCard = 6;
 
-if(localStorage.getItem('titleNews').length !== 0){
-    document.querySelector('#news').value = localStorage.getItem('titleNews')
+if(localStorage.getItem('titleNews') !== null){
+    if(localStorage.getItem('titleNews').length !== 0){
+        document.querySelector('#news').value = localStorage.getItem('titleNews')
+    }
 }
-
 document.querySelector('.header__finder').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -89,7 +90,7 @@ document.querySelector('.header__finder').addEventListener('submit', function (e
     
 });
 
-if(localStorage.length !== 0){
+if(localStorage.getItem('articles') !== null){
     if(localStorage.getItem('articles').length !== 0){
         newsResult.classList.add('news_result_active')
         newsList.render((JSON.parse(localStorage.getItem('articles'))).slice(0,firstGroupCard));
