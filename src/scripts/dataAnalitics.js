@@ -4,7 +4,7 @@ const month = localStorage.getItem('month');
 let index = 0;
 let indexPrev = 7;
 const indexWeek = 7;
-let newArrayArticles = [];
+const newArrayArticles = [];
 
 document.querySelector('#header__week-news').textContent = `${articles.length}`;
 document.querySelector('#header__title').textContent = `«${titleNews}»`;
