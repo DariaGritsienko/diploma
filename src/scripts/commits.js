@@ -1,4 +1,4 @@
-class Commits{
+class CommitsLoader{
     constructor(api, commitsList){
         this.api = api;
         this.commitsList = commitsList;
@@ -17,6 +17,6 @@ class Commits{
 import {api} from './api'
 import {commitsList} from './cardList'
 
-export const commits = new Commits(api, commitsList);
+export const commits = new CommitsLoader(api, commitsList);
 
 commits.loadData();
