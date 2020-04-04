@@ -11,6 +11,10 @@
     animation: spin .75s infinite linear;
 }
 
+.news_loader.spinner_visible{
+    display: block;
+}
+
 @keyframes spin {
     100% {
         transform: rotate(360deg);

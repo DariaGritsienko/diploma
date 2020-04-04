@@ -3,3 +3,7 @@
     width: 96px;
     display: block;
 }
+
+.news_error.news_loader_error{
+    display: block;
+}
