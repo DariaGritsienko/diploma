@@ -28,7 +28,7 @@
       <div class="header__browser">
         <h1 class="header__title header__title_color_white">Что в мире<br> творится?</h1>
         <p class="header__text header__text_color_white">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-        <form class="header__finder"><input type="text" id="news" required minlength='2' maxlength="30" placeholder="Введите тему новости"><button type="submit" class="button header__button">Искать</button></form>
+        <form class="header__finder"><input type="text" id="news" required minlength='2' maxlength="30" autocomplete='off' placeholder="Введите тему новости"><button type="submit" class="button header__button">Искать</button></form>
       </div>
     </header>
 
@@ -65,8 +65,17 @@
         <img src="<%=require('./images/author.png')%>" alt="photo Daria" class="profile__image">
         <div class="profile__container">
           <h2 class="profile__title">Об авторе</h2>
-          <p class="profile__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-          <p class="profile__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+          <p class="profile__text">Привет, я&nbsp;Дарья Грициенко, фронтенд-разработчица, а&nbsp;это моя дипломная работа из&nbsp;курса &laquo;Яндекс.Практикум&raquo;, где я&nbsp;обучилась JavaScript, HTML, CSS и&nbsp;WebPack.</p>
+          <p class="profile__text">Могу Вас уверить, я&nbsp;качественно сверстаю Вам сайт и&nbsp;наполню его интерактивом. Список других моих работ:
+            <ul>
+              <li><a href="https://dariagritsienko.github.io/museum_for_everyone/" target="_blank" class="footer__link"><b>Музей для всех</b></a></li>
+              <li><a href="https://dariagritsienko.github.io/jstck/" target="_blank" class="footer__link"><b>Сервис аналитики</b></a></li>
+              <li><a href="https://dariagritsienko.github.io/best_buddies/" target="_blank" class="footer__link"><b>Best buddies</b></a></li>
+              <li><a href="https://dariagritsienko.github.io/project_3/" target="_blank" class="footer__link"><b>Mesto</b></a></li>
+              <li><a href="https://dariagritsienko.github.io/project_2/" target="_blank" class="footer__link"><b>Путешествия по России</b></a></li>
+              <li><a href="https://dariagritsienko.github.io/project_1/" target="_blank" class="footer__link"><b>Научиться учиться</b></a></li>
+            </ul>
+          </p>
         </div>
       </div>
     </section>

@@ -12,8 +12,14 @@ class CardList {
     }
     renderCommit(articles) {
         articles.forEach(article => {
-            const infoCommit = {name: article.commit.committer.name, email: article.commit.committer.email, date: article.commit.committer.date, message: article.commit.message, avatar_url: article.author.avatar_url };
+            let infoCommit;
+            if (article.author === null){
+                infoCommit = {name: article.commit.committer.name, email: article.commit.committer.email, date: article.commit.committer.date, message: article.commit.message, avatar_url: 'https://avatars3.githubusercontent.com/u/19864447?v=4' };
+            }else{
+                infoCommit = {name: article.commit.committer.name, email: article.commit.committer.email, date: article.commit.committer.date, message: article.commit.message, avatar_url: article.author.avatar_url};
+            }
             this.place.appendSlide(this.card.createCommit(infoCommit));
+            this.place.update();
         })
     }
 }

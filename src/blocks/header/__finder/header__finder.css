@@ -15,7 +15,9 @@
     font-size: 16px;
     line-height: 22px;
 }
-
+.header__finder_error{
+    border: 2px solid red;
+}
 @media screen and (max-width: 945px) {
     #news{
         width: 448px;
